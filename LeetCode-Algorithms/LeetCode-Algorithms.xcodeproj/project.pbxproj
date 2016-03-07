@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8EDD6F7B1C89C5BE00C61D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6F7A1C89C5BE00C61D7F /* AppDelegate.swift */; };
+		8EDD6F9B1C8D936900C61D7F /* 001_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6F9A1C8D936900C61D7F /* 001_TwoSum.swift */; };
+		8EDD6FA11C8D93DC00C61D7F /* 001_TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6FA01C8D93DC00C61D7F /* 001_TwoSumTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +28,9 @@
 		8EDD6F861C89C5BE00C61D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8EDD6F8B1C89C5BF00C61D7F /* LeetCode-AlgorithmsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LeetCode-AlgorithmsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDD6F911C89C5BF00C61D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8EDD6F9A1C8D936900C61D7F /* 001_TwoSum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 001_TwoSum.swift; sourceTree = "<group>"; };
+		8EDD6F9F1C8D93DB00C61D7F /* LeetCode-AlgorithmsTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeetCode-AlgorithmsTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		8EDD6FA01C8D93DC00C61D7F /* 001_TwoSumTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 001_TwoSumTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +74,9 @@
 			children = (
 				8EDD6F7A1C89C5BE00C61D7F /* AppDelegate.swift */,
 				8EDD6F861C89C5BE00C61D7F /* Info.plist */,
+				8EDD6F9C1C8D936E00C61D7F /* Easy */,
+				8EDD6F9D1C8D937300C61D7F /* Medium */,
+				8EDD6F9E1C8D937700C61D7F /* Hard */,
 			);
 			path = "LeetCode-Algorithms";
 			sourceTree = "<group>";
@@ -76,9 +84,57 @@
 		8EDD6F8E1C89C5BF00C61D7F /* LeetCode-AlgorithmsTests */ = {
 			isa = PBXGroup;
 			children = (
+				8EDD6F9F1C8D93DB00C61D7F /* LeetCode-AlgorithmsTests-Bridging-Header.h */,
 				8EDD6F911C89C5BF00C61D7F /* Info.plist */,
+				8EDD6FA21C8D940400C61D7F /* Easy */,
+				8EDD6FA31C8D940900C61D7F /* Medium */,
+				8EDD6FA41C8D940C00C61D7F /* Hard */,
 			);
 			path = "LeetCode-AlgorithmsTests";
+			sourceTree = "<group>";
+		};
+		8EDD6F9C1C8D936E00C61D7F /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Easy;
+			sourceTree = "<group>";
+		};
+		8EDD6F9D1C8D937300C61D7F /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				8EDD6F9A1C8D936900C61D7F /* 001_TwoSum.swift */,
+			);
+			name = Medium;
+			sourceTree = "<group>";
+		};
+		8EDD6F9E1C8D937700C61D7F /* Hard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Hard;
+			sourceTree = "<group>";
+		};
+		8EDD6FA21C8D940400C61D7F /* Easy */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Easy;
+			sourceTree = "<group>";
+		};
+		8EDD6FA31C8D940900C61D7F /* Medium */ = {
+			isa = PBXGroup;
+			children = (
+				8EDD6FA01C8D93DC00C61D7F /* 001_TwoSumTests.swift */,
+			);
+			name = Medium;
+			sourceTree = "<group>";
+		};
+		8EDD6FA41C8D940C00C61D7F /* Hard */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Hard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +235,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDD6F9B1C8D936900C61D7F /* 001_TwoSum.swift in Sources */,
 				8EDD6F7B1C89C5BE00C61D7F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -187,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8EDD6FA11C8D93DC00C61D7F /* 001_TwoSumTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,10 +368,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "LeetCode-AlgorithmsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nestorgt.LeetCode-AlgorithmsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeetCode-AlgorithmsTests/LeetCode-AlgorithmsTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetCode-Algorithms.app/LeetCode-Algorithms";
 			};
 			name = Debug;
@@ -322,10 +383,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "LeetCode-AlgorithmsTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nestorgt.LeetCode-AlgorithmsTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LeetCode-AlgorithmsTests/LeetCode-AlgorithmsTests-Bridging-Header.h";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LeetCode-Algorithms.app/LeetCode-Algorithms";
 			};
 			name = Release;
@@ -349,6 +412,7 @@
 				8EDD6F961C89C5BF00C61D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EDD6F971C89C5BF00C61D7F /* Build configuration list for PBXNativeTarget "LeetCode-AlgorithmsTests" */ = {
 			isa = XCConfigurationList;
@@ -357,6 +421,7 @@
 				8EDD6F991C89C5BF00C61D7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
