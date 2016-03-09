@@ -20,6 +20,16 @@ class _001_TwoSumTests: XCTestCase {
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
+
+    func testTwoSumEmpty() {
+        let nums: [Int] = []
+        let target = 0
+        let expected = []
+        
+        let result = _001_TwoSum.twoSum(nums, target: target)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
     
     func testTwoSum_Negatives() {
         let nums = [2, 7, 11, 15, 1 , 16, -4, -8, -10]
