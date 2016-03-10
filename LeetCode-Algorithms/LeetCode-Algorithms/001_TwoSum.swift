@@ -40,7 +40,7 @@ struct _001_TwoSum {
     /** t = O(n), s = O(n)
      loop through the array and save in a dictionary the number from the array as key, and the index in the array as value "[number : inIndex]". That way we are able to ask the dictionary if we have seen before the number that we are looking for.
      */
-    static internal func twoSum(nums: [Int], target: Int) -> [Int] {
+    static func twoSum(nums: [Int], target: Int) -> [Int] {
         var dictionary = [Int : Int]() // [numberFromNums : indexInNums]
         for i in 0..<nums.count {
             let requiredNumber: Int = target - nums[i]
