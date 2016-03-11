@@ -36,9 +36,38 @@ public class ListNode {
     }
 }
 
+typealias SumCarriage = (sum: Int, carriage: Int)
+
 struct _002_AddTwoNumbers {
+
+    /** t = O(n), s = O(1)
+     loop through both list nodes, make the sum and save carriage that will be applied to next sum
+    */
+    static func addTwoNumbers(var l1: ListNode?, var _ l2: ListNode?) -> ListNode? {
+        guard l1 != nil || l2 != nil else {
+            return nil
+        }
+        var sumCarriage: SumCarriage = sumList(n1: l1!.val, n2: l2!.val)
+        var listNode: ListNode? = ListNode(sumCarriage.sum)
+        var prevCarriage: Int = sumCarriage.carriage
+        let result = listNode
+        
+        while l1?.next != nil && l2?.next != nil {
+            l1 = l1!.next
+            l2 = l2!.next
+            let sumCarriage: SumCarriage = sumList(n1: l1!.val, n2: l2!.val, prevCarriage: prevCarriage)
+            listNode!.next = ListNode(sumCarriage.sum)
+            prevCarriage = sumCarriage.carriage
+            listNode = listNode!.next
+        }
+        
+        return result
+    }
     
-    static func addTwoNumbers(l1: ListNode?, _ l2: ListNode?) -> ListNode? {
-        return nil
+    static func sumList(n1 n1: Int, n2: Int, prevCarriage: Int = 0) -> SumCarriage {
+        let tempSum = n1+n2+prevCarriage
+        let sum = tempSum >= 10 ? (tempSum)%10 : tempSum
+        let carriage = tempSum >= 10 ? (tempSum)/10 : 0
+        return (sum, carriage)
     }
 }
