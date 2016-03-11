@@ -43,9 +43,13 @@ class _002_AddTwoNumbersTests: XCTestCase {
         guard listNode1.val == listNode2.val else {
             return false
         }
-        while listNode1.next != nil && listNode2.next != nil {
-            listNode1 = listNode1.next!
-            listNode2 = listNode2.next!
+        while listNode1.next != nil || listNode2.next != nil {
+            if listNode1.next != nil {
+                listNode1 = listNode1.next!
+            }
+            if listNode2.next != nil {
+                listNode2 = listNode2.next!
+            }
             guard listNode1.val == listNode2.val else {
                 return false
             }
@@ -58,7 +62,17 @@ class _002_AddTwoNumbersTests: XCTestCase {
         let n2 = 8
         let expected: SumCarriage = (5, 1)
         
-        let result = _002_AddTwoNumbers.sumList(n1: n1, n2: n2)
+        let result = _002_AddTwoNumbers().sumList(n1: n1, n2: n2)
+        
+        XCTAssert(result.carriage == expected.carriage && result.sum == expected.sum, "result: \(result) - expected \(expected)")
+    }
+    
+    func testSumList_With10() {
+        let n1 = 4
+        let n2 = 6
+        let expected: SumCarriage = (0, 1)
+        
+        let result = _002_AddTwoNumbers().sumList(n1: n1, n2: n2)
         
         XCTAssert(result.carriage == expected.carriage && result.sum == expected.sum, "result: \(result) - expected \(expected)")
     }
@@ -68,7 +82,17 @@ class _002_AddTwoNumbersTests: XCTestCase {
         let l2: ListNode = linkedNodesWithNumbers([5,6,4])
         let expected: ListNode = linkedNodesWithNumbers([7,0,8])
         
-        let result: ListNode? = _002_AddTwoNumbers.addTwoNumbers(l1, l2)
+        let result: ListNode? = _002_AddTwoNumbers().addTwoNumbers(l1, l2)
+        
+        XCTAssert(isListNode(result!, equalToListNode: expected), "result: \(numbersFromLinkedNodes(result)) - expected: \(numbersFromLinkedNodes(expected))")
+    }
+    
+    func testAddTwoNumbers_DifferentSize() {
+        let l1: ListNode = linkedNodesWithNumbers([1,8])
+        let l2: ListNode = linkedNodesWithNumbers([0])
+        let expected: ListNode = linkedNodesWithNumbers([1,8])
+        
+        let result: ListNode? = _002_AddTwoNumbers().addTwoNumbers(l1, l2)
         
         XCTAssert(isListNode(result!, equalToListNode: expected), "result: \(numbersFromLinkedNodes(result)) - expected: \(numbersFromLinkedNodes(expected))")
     }
