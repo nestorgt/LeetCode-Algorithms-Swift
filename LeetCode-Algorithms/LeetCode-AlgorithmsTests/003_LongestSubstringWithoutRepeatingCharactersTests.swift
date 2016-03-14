@@ -19,5 +19,49 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
-
+    
+    func testLengthOfLongestSubstringOneChar() {
+        let string = "c"
+        let expected = 1
+        
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testLengthOfLongestSubstring2() {
+        let string = "aab"
+        let expected = 2
+        
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testLengthOfLongestSubstring3() {
+        let string = "aa"
+        let expected = 1
+        
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testLengthOfLongestSubstring4() {
+        let string = ""
+        let expected = 0
+        
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testLengthOfLongestSubstring5() {
+        let string = "abba"
+        let expected = 2
+        
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
 }
