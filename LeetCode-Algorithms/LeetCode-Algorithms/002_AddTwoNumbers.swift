@@ -24,7 +24,6 @@ Consider list nodes of diferent sizes.
 
 import Foundation
 
-
 // Definition for singly-linked list.
 public class ListNode {
     public var val: Int
