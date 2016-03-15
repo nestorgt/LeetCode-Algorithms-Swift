@@ -16,7 +16,7 @@ Given a string, find the length of the longest substring without repeating chara
 
 Loop through string and use a hashmap to save positions of caracters already seen.
 When the new character is in the hashmap and it's in a valid position (startIndex > characterIndex) reset.
-
+t = O(N), s = O(1)
 */
 
 import Foundation
@@ -33,7 +33,7 @@ class _003_LongestSubstringWithoutRepeatingCharacters {
             }
         }
     }
-    
+
     func lengthOfLongestSubstring(s: String) -> Int {
         guard s.characters.count > 0 else {
             return 0

@@ -6,7 +6,7 @@
 //  Copyright © 2016 nestorgt. All rights reserved.
 //
 
-/* #1 Two Sum - Medium - https://leetcode.com/problems/two-sum/
+/* #1 Two Sum - Easy - https://leetcode.com/problems/two-sum/
 
 - QUESTION
 
