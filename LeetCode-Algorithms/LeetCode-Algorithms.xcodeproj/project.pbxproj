@@ -11,6 +11,8 @@
 		8E0137F81C96F63200E31662 /* 003_LongestSubstringWithoutRepeatingCharactersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0137F71C96F63200E31662 /* 003_LongestSubstringWithoutRepeatingCharactersTests.swift */; };
 		8E52FFA41C91994300E1BAD4 /* 002_AddTwoNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52FFA31C91994300E1BAD4 /* 002_AddTwoNumbers.swift */; };
 		8E52FFA61C9199F000E1BAD4 /* 002_AddTwoNumbersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E52FFA51C9199F000E1BAD4 /* 002_AddTwoNumbersTests.swift */; };
+		8ECB45391C9B0154003F3EF9 /* 004_MedianOfTwoSortedArrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB45381C9B0154003F3EF9 /* 004_MedianOfTwoSortedArrays.swift */; };
+		8ECB453B1C9B0171003F3EF9 /* 004_MedianOfTwoSortedArraysTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECB453A1C9B0171003F3EF9 /* 004_MedianOfTwoSortedArraysTests.swift */; };
 		8EDD6F7B1C89C5BE00C61D7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6F7A1C89C5BE00C61D7F /* AppDelegate.swift */; };
 		8EDD6F9B1C8D936900C61D7F /* 001_TwoSum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6F9A1C8D936900C61D7F /* 001_TwoSum.swift */; };
 		8EDD6FA11C8D93DC00C61D7F /* 001_TwoSumTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EDD6FA01C8D93DC00C61D7F /* 001_TwoSumTests.swift */; };
@@ -31,6 +33,8 @@
 		8E0137F71C96F63200E31662 /* 003_LongestSubstringWithoutRepeatingCharactersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 003_LongestSubstringWithoutRepeatingCharactersTests.swift; sourceTree = "<group>"; };
 		8E52FFA31C91994300E1BAD4 /* 002_AddTwoNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 002_AddTwoNumbers.swift; sourceTree = "<group>"; };
 		8E52FFA51C9199F000E1BAD4 /* 002_AddTwoNumbersTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 002_AddTwoNumbersTests.swift; sourceTree = "<group>"; };
+		8ECB45381C9B0154003F3EF9 /* 004_MedianOfTwoSortedArrays.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 004_MedianOfTwoSortedArrays.swift; sourceTree = "<group>"; };
+		8ECB453A1C9B0171003F3EF9 /* 004_MedianOfTwoSortedArraysTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 004_MedianOfTwoSortedArraysTests.swift; sourceTree = "<group>"; };
 		8EDD6F771C89C5BE00C61D7F /* LeetCode-Algorithms.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LeetCode-Algorithms.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDD6F7A1C89C5BE00C61D7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8EDD6F861C89C5BE00C61D7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -121,6 +125,7 @@
 		8EDD6F9E1C8D937700C61D7F /* Hard */ = {
 			isa = PBXGroup;
 			children = (
+				8ECB45381C9B0154003F3EF9 /* 004_MedianOfTwoSortedArrays.swift */,
 			);
 			name = Hard;
 			sourceTree = "<group>";
@@ -145,6 +150,7 @@
 		8EDD6FA41C8D940C00C61D7F /* Hard */ = {
 			isa = PBXGroup;
 			children = (
+				8ECB453A1C9B0171003F3EF9 /* 004_MedianOfTwoSortedArraysTests.swift */,
 			);
 			name = Hard;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECB45391C9B0154003F3EF9 /* 004_MedianOfTwoSortedArrays.swift in Sources */,
 				8EDD6F9B1C8D936900C61D7F /* 001_TwoSum.swift in Sources */,
 				8E0137F41C96EDC100E31662 /* 003_LongestSubstringWithoutRepeatingCharacters.swift in Sources */,
 				8E52FFA41C91994300E1BAD4 /* 002_AddTwoNumbers.swift in Sources */,
@@ -261,6 +268,7 @@
 				8E52FFA61C9199F000E1BAD4 /* 002_AddTwoNumbersTests.swift in Sources */,
 				8EDD6FA11C8D93DC00C61D7F /* 001_TwoSumTests.swift in Sources */,
 				8E0137F81C96F63200E31662 /* 003_LongestSubstringWithoutRepeatingCharactersTests.swift in Sources */,
+				8ECB453B1C9B0171003F3EF9 /* 004_MedianOfTwoSortedArraysTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

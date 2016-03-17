@@ -21,7 +21,7 @@ t = O(N), s = O(1)
 
 import Foundation
 
-class _003_LongestSubstringWithoutRepeatingCharacters {
+struct _003_LongestSubstringWithoutRepeatingCharacters {
     
     struct SubstringHelper {
         var startIndex: Int = 0
@@ -34,7 +34,7 @@ class _003_LongestSubstringWithoutRepeatingCharacters {
         }
     }
 
-    func lengthOfLongestSubstring(s: String) -> Int {
+    static func lengthOfLongestSubstring(s: String) -> Int {
         guard s.characters.count > 0 else {
             return 0
         }
