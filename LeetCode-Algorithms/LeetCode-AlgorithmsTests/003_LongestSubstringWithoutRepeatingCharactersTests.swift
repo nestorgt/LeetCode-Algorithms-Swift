@@ -15,7 +15,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = "abcabcbb"
         let expected = 3 // "abc"
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
@@ -24,7 +24,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = "c"
         let expected = 1
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
@@ -33,7 +33,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = "aab"
         let expected = 2
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
@@ -42,7 +42,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = "aa"
         let expected = 1
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
@@ -51,7 +51,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = ""
         let expected = 0
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
@@ -60,7 +60,7 @@ class _003_LongestSubstringWithoutRepeatingCharactersTests: XCTestCase {
         let string = "abba"
         let expected = 2
         
-        let result = _003_LongestSubstringWithoutRepeatingCharacters.lengthOfLongestSubstring(string)
+        let result = _003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring(string)
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }

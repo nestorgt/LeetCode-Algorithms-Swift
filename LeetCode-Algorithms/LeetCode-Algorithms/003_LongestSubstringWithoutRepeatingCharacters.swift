@@ -34,7 +34,7 @@ struct _003_LongestSubstringWithoutRepeatingCharacters {
         }
     }
 
-    static func lengthOfLongestSubstring(s: String) -> Int {
+    func lengthOfLongestSubstring(s: String) -> Int {
         guard s.characters.count > 0 else {
             return 0
         }
