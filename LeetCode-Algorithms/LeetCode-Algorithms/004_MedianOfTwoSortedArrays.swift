@@ -24,7 +24,10 @@ struct _004_MedianOfTwoSortedArrays {
     func findMedianSortedArrays(nums1: [Int], _ nums2: [Int]) -> Double {
         let m = nums1.count
         let n = nums2.count
-
+        
+        guard m > 0 || n > 0 else {
+            return 0.0
+        }
         guard m <= n else {
             return findMedianSortedArrays(nums2, nums1)
         }

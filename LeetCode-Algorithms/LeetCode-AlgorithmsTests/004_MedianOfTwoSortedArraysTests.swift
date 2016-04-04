@@ -70,4 +70,34 @@ class _004_MedianOfTwoSortedArraysTests: XCTestCase {
         
         XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
     }
+    
+    func testMedianOfTwoSortedArrays_emptyLarge() {
+        let nums1: [Int] = []
+        let nums2: [Int] = [1,2,3,4,7,10]
+        let expected: Double = 3.5
+        
+        let result = _004_MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testMedianOfTwoSortedArrays_sameNumbers() {
+        let nums1: [Int] = []
+        let nums2: [Int] = [1,1,1,1,1,1]
+        let expected: Double = 1
+        
+        let result = _004_MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
+    
+    func testMedianOfTwoSortedArrays_EmptyArrays() {
+        let nums1: [Int] = []
+        let nums2: [Int] = []
+        let expected: Double = 0.0
+        
+        let result = _004_MedianOfTwoSortedArrays().findMedianSortedArrays(nums1, nums2)
+        
+        XCTAssert(result == expected, "result: \(result) - expected: \(expected)")
+    }
 }
